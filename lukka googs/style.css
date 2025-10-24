@@ -1,0 +1,231 @@
+body {
+  font-family: 'Aprilia', cursive;
+  font-size: 20px;
+  margin: 0;
+  background: #fff9fb;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  -webkit-transition: background 0.3s, color 0.3s;
+  -moz-transition: background 0.3s, color 0.3s;
+  -ms-transition: background 0.3s, color 0.3s;
+  -o-transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: #ffe5ec;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Tombol Dashboard */
+.btn-dashboard {
+  background: #ffb3c6;          
+  color: #333;                  
+  padding: 6px 12px;            
+  border: none;                 
+  border-radius: 10px;          
+  font-weight: 500;             
+  cursor: pointer;              
+  transition: all 0.3s ease;    
+  text-decoration: none;        
+  display: inline-block;        
+}
+
+.btn-dashboard:hover {
+  background: #ffa6b8;          
+  transform: scale(1.03);       
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom right, #ffe5ec, #fff);
+}
+
+/* ==== Bagian Tentang Kami (versi tengah & aesthetic) ==== */
+.tentang-section {
+  background: linear-gradient(180deg, #fff5f8 0%, #fff 100%);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tentang-section h2 {
+  color: #c9184a;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.tentang-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tentang-content img {
+  width: 400px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tentang-text {
+  max-width: 500px;
+  text-align: center;
+}
+
+.tentang-text p {
+  margin-bottom: 16px;
+  color: #555;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.tentang-text ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.tentang-text li {
+  background: #ffe6eb;
+  margin: 8px auto;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #c9184a;
+  display: inline-block;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .tentang-content {
+    flex-direction: column;
+  }
+
+  .tentang-content img {
+    width: 90%;
+    height: auto;
+  }
+
+  .tentang-text {
+    width: 90%;
+  }
+}
+
+.btn-shop {
+  background: #ffcad4;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.produk-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.produk-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 1rem;
+}
+
+.card img {
+  width: 100%;               
+  height: 250px;             
+  object-fit: cover;         
+  border-radius: 12px;       
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.03);    
+}
+
+.add-cart {
+  background: #ffb3c6;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cart-container {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.contact-section {
+  background: #fff0f3;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  background: #ffe5ec;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Dark mode */
+.dark {
+  background: #222;
+  color: #eee;
+}
+
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ffb3c6;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
